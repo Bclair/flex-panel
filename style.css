@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.wrapper {
+  font-family: 'Raleway', sans-serif;
+  display:flex;
+  height:100vh;
+  cursor:pointer;
+}
+.box {
+  font-size: 25vh;
+  color: white;
+  border: .25px solid black;
+}
+.box1{background-color: #48ea4b;}
+.box2{background-color: #33c160;}
+.box3{background-color:#09b740;}
+.box4{background-color: #00a502;}
+.box5{background-color: #008702;}
+.box6{background-color:#006d01;}
+
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .panels {
+      min-height:100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .box {
+      color:white;
+      text-align: center;
+      align-items:center;
+     
+      transition:
+        
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      
+      background-size:cover;
+      background-position:center;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Flex Items */
+    .box > * {
+      margin:0;
+      width: 100%;
+      transition:transform 0.5s;
+      flex: 1 0 auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box > *:first-child { transform: translateY(-100%); }
+    .box.open-active > *:first-child { transform: translateY(0); }
+    .box > *:last-child { transform: translateY(100%); }
+    .box.open-active > *:last-child { transform: translateY(0); }
+    
+    .box.open {
+      flex: 5;
+      }
