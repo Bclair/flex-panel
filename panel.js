@@ -1,4 +1,5 @@
- const box = document.querySelectorAll('.box');
+$(function() {                                                                                //---HERE---
+const box = document.querySelectorAll('.box');
 
     function toggleOpen() {
       this.classList.toggle('open');
@@ -13,3 +14,5 @@
 
     box.forEach(box => box.addEventListener('click', toggleOpen));
     box.forEach(box => box.addEventListener('transitionend', toggleActive));
+ 
+ });	
