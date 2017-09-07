@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html {
+  box-sizing: border-box;
+  background: green;
+  }
+
+  body {
+    margin: 0;
+  }
+
 .wrapper {
   font-family: 'Raleway', sans-serif;
   display:flex;
@@ -7,16 +16,16 @@
   cursor:pointer;
 }
 .box {
-  font-size: 25vh;
+  font-size: 10vh;
   color: white;
   border: .25px solid black;
 }
-.box1{background-color: #48ea4b;}
-.box2{background-color: #33c160;}
-.box3{background-color:#09b740;}
-.box4{background-color: #00a502;}
-.box5{background-color: #008702;}
-.box6{background-color:#006d01;}
+.box1{background-image: url("brady.jpg");}
+.box2{background-image: url("aaron.jpg");}
+.box3{background-image: url("brady.jpg");}
+.box4{background-image: url("brady.jpg");}
+.box5{background-image: url("brady.jpg");}
+.box6{background-image: url("brady.jpg");}
 
 
     *, *:before, *:after {
