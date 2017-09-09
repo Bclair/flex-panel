@@ -13,19 +13,19 @@ html {
   font-family: 'Raleway', sans-serif;
   display:flex;
   height:100vh;
-  cursor:pointer;
+    cursor:pointer;
 }
 .box {
   font-size: 10vh;
   color: white;
+  text-shadow: 2px 2px #171515;
   border: .25px solid black;
 }
 .box1{background-image: url("brady.jpg");}
 .box2{background-image: url("aaron.jpg");}
-.box3{background-image: url("brees.jpeg");}
-.box4{background-image: url("newton.jpg");}
-.box5{background-image: url("montana.jpg");}
-.box6{background-image: url("manning.jpg");}
+.box3{background-image: url("newton.jpg");}
+.box4{background-image: url("montana.jpg");}
+.box5{background-image: url("manning.jpg");}
 
 
     *, *:before, *:after {
